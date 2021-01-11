@@ -4,8 +4,10 @@ import GlobalStyle from "../styles/GlobalStyles";
 import { Helmet } from "react-helmet";
 import Hero from "../components/Hero/Hero";
 import Tools from "../components/Tools/Tools";
+import Projects from "../components/Projects/Projects";
+import { graphql } from "gatsby";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <main>
       <Helmet>
@@ -23,9 +25,30 @@ const IndexPage = () => {
       <Navbar />
       <Hero />
       <Tools />
+      <Projects data={data} />
     </main>
   );
 };
 
+export const query = graphql`
+  query {
+    allSanityProjects {
+      nodes {
+        projectTitle
+        projectDesc
+        projectPreview {
+          asset {
+            fluid(maxWidth: 700) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+        projectTech
+        projectUrl
+        projectGithubUrl
+      }
+    }
+  }
+`;
 
 export default IndexPage;
