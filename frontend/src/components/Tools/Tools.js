@@ -13,7 +13,7 @@ import {
 
 const Tools = () => {
   return (
-    <StyledSection className="tools">
+    <StyledSection className="tools" id="tools">
       <h1>Technologies & Tools</h1>
       <Container>
         <ToolsIcon
@@ -53,7 +53,7 @@ const StyledSection = styled.section`
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     max-width: 900px;
     padding: 0 0 60px 0;
     border-bottom: 2px solid #2d2e32;

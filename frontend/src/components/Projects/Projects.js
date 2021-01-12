@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 const Projects = ({ data }) => {
   return (
-    <StyledSection className="projects">
+    <StyledSection className="projects" id="showcase">
       <Container>
         <h1>Showcase</h1>
         <div className="projectWrapper">
@@ -48,8 +48,9 @@ const StyledSection = styled.section`
     .projectWrapper {
       padding: 30px 0 0 0;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
+      flex-wrap: wrap;
       .projectCard {
         width: 100%;
         max-width: 360px;

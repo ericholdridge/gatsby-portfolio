@@ -10,10 +10,10 @@ const Navbar = () => {
       <Container>
         <NavbarLogo />
         <StyledLinks>
-          <Link to="/">Home</Link>
-          <Link to="/">About</Link>
-          <Link to="/">Services</Link>
-          <Link to="/">Contact</Link>
+          <Link to="/#">Home</Link>
+          <Link to="/#tools">Tools</Link>
+          <Link to="/#showcase">Showcase</Link>
+          <Link to="/#contact">Contact</Link>
         </StyledLinks>
       </Container>
     </StyledNav>

@@ -5,9 +5,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: #2d2e32;
     font-family: 'Open Sans', sans-serif;
   }
+
 `;
 export default GlobalStyle;

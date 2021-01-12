@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero";
 import Tools from "../components/Tools/Tools";
 import Projects from "../components/Projects/Projects";
 import { graphql } from "gatsby";
+import Contact from "../components/Contact/Contact";
 
 const IndexPage = ({ data }) => {
   return (
@@ -13,7 +14,8 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Eric Holdridge ~ Web Developer</title>
-        <link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -26,6 +28,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <Tools />
       <Projects data={data} />
+      <Contact />
     </main>
   );
 };

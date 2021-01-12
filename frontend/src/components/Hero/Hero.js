@@ -7,7 +7,7 @@ import { faComment } from "@fortawesome/free-regular-svg-icons";
 
 const Hero = () => {
   return (
-    <StyledSection className="hero">
+    <StyledSection className="hero" id="#">
       <Container>
         <div className="box-1">
           <div className="main-title">
@@ -30,7 +30,7 @@ const Hero = () => {
               talented IT professionals in developing websites to the highest
               standards.
             </p>
-            <a href="#contact">
+            <a href="/#contact">
               Lets chat!{" "}
               <FontAwesomeIcon icon={faComment} size="2x" color="#6666ff" />
             </a>
@@ -43,7 +43,7 @@ const Hero = () => {
 
 const StyledSection = styled.section`
   width: 100%;
-  min-height: calc(100vh - 53px);
+  min-height: calc(90vh - 53px);
   display: flex;
   justify-content: center;
   align-items: center;
