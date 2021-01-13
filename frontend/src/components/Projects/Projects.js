@@ -23,9 +23,7 @@ const Projects = ({ data }) => {
                   ))}
                 </div>
                 <div className="projectLinks">
-                  <a href={item.projectGithubUrl}>
-                    View Code
-                  </a>
+                  <a href={item.projectGithubUrl}>View Code</a>
                   <a href={item.projectUrl}>Live Preview</a>
                 </div>
               </div>
@@ -46,15 +44,16 @@ const StyledSection = styled.section`
       color: whitesmoke;
     }
     .projectWrapper {
-      padding: 30px 0 0 0;
+      padding: 10px 0 0 0;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       .projectCard {
         width: 100%;
         max-width: 360px;
         background: #2d2e32;
+        margin: 20px 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         .projectCardInfo {
@@ -75,7 +74,7 @@ const StyledSection = styled.section`
             justify-content: center;
             span {
               background: rgb(102, 102, 255);
-              margin:4px;
+              margin: 4px;
               padding: 0 4px;
               color: whitesmoke;
               border-radius: 4px;
@@ -96,6 +95,31 @@ const StyledSection = styled.section`
               }
             }
           }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      text-align: center;
+    }
+    .container {
+      .projectWrapper {
+        justify-content: center;
+        .projectCard {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+  @media(min-width: 769px) and (max-width: 1280px) {
+    .container {
+      .projectWrapper {
+        justify-content: space-between;
+        .projectCard {
+          max-width: none;
+          width: 48%;
+          margin: 20px 0;
         }
       }
     }

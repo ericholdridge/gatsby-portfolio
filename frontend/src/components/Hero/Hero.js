@@ -43,7 +43,7 @@ const Hero = () => {
 
 const StyledSection = styled.section`
   width: 100%;
-  min-height: calc(90vh - 53px);
+  min-height: calc(80vh - 53px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +87,24 @@ const StyledSection = styled.section`
         a {
           color: whitesmoke;
           text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-height: calc(65vh - 53px);
+    .container {
+      .box-1 {
+        padding: 0;
+        .main-info {
+          h1,
+          h2 {
+            font-size: 2.4rem;
+          }
+          p {
+            font-size: .98rem;
+          }
         }
       }
     }

@@ -58,6 +58,18 @@ const StyledSection = styled.section`
     padding: 0 0 60px 0;
     border-bottom: 2px solid #2d2e32;
   }
+  @media(max-width: 768px) {
+    h1 {
+      padding-bottom: 10px;
+    }
+    .container {
+      flex-wrap: wrap;
+      div {
+        max-width: 150px;
+        margin: 30px 0 0 0;
+      }
+    }
+  }
 `;
 
 export default Tools;

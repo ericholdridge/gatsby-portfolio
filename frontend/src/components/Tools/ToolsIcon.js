@@ -16,6 +16,8 @@ const ToolsIcon = ({ iconTitle, icon, size, color }) => {
 };
 
 const StyledDiv = styled.div`
+  width: 100%;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
