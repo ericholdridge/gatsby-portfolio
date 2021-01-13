@@ -43,7 +43,7 @@ const Hero = () => {
 
 const StyledSection = styled.section`
   width: 100%;
-  min-height: calc(80vh - 53px);
+  min-height: calc(100vh - 53px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,6 @@ const StyledSection = styled.section`
   }
 
   @media (max-width: 768px) {
-    min-height: calc(65vh - 53px);
     .container {
       .box-1 {
         padding: 0;
