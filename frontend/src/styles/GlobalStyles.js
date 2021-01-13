@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
