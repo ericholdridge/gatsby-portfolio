@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="copyright">
-          <p>&#169; 2021. All right reserved.</p>
+          <p>&#169; 2021. All rights reserved.</p>
         </div>
       </Container>
     </StyledFooter>
