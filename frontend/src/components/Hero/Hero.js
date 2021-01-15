@@ -32,7 +32,12 @@ const Hero = () => {
             </p>
             <a href="/#contact">
               Lets chat!{" "}
-              <FontAwesomeIcon icon={faComment} size="2x" color="#6666ff" />
+              <FontAwesomeIcon
+                icon={faComment}
+                classname="icon"
+                size="2x"
+                color="#6666ff"
+              />
             </a>
           </div>
         </div>
@@ -92,7 +97,7 @@ const StyledSection = styled.section`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 600px) and (max-width: 768px) {
     .container {
       .box-1 {
         padding: 0;
@@ -102,8 +107,64 @@ const StyledSection = styled.section`
             font-size: 2.4rem;
           }
           p {
-            font-size: .98rem;
+            font-size: 0.98rem;
           }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 413px) {
+    .container {
+      .box-1 {
+        .main-title {
+          h1 {
+            font-size: 0.8rem;
+          }
+        }
+        .main-info {
+          h1,
+          h2 {
+            font-size: 1.4rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+          a {
+            font-size: 0.8rem;
+          }
+          /* .icon {
+            font-size: .1rem;
+          } */
+        }
+      }
+    }
+  }
+
+  @media (min-width: 414px) and (max-width: 600px) {
+    .container {
+      .box-1 {
+        /* .main-title {
+          h1 {
+            font-size: 1rem;
+          }
+        } */
+        .main-info {
+          h1,
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            /* width: 100%;
+            max-width: 350px; */
+            font-size: 0.9rem;
+          }
+          a {
+            font-size: 0.9rem;
+          }
+          /* .icon {
+            font-size: .1rem;
+          } */
         }
       }
     }
