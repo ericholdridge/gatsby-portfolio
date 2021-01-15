@@ -9,11 +9,11 @@ const Contact = () => {
         <h1>Contact</h1>
         <form name="contact" method="post" action="/contact">
           <input type="hidden" name="form-name" value="contact" />
-          <label>Name:</label>
+          <label htmlFor="name">Name:</label>
           <input type="text" name="name" placeholder="John Doe" />
-          <label>Email:</label>
+          <label htmlFor="email">Email:</label>
           <input type="email" name="email" placeholder="eric@example.com" />
-          <label>Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             name="message"
             rows="8"

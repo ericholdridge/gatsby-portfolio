@@ -7,6 +7,7 @@ import Tools from "../components/Tools/Tools";
 import Projects from "../components/Projects/Projects";
 import { graphql } from "gatsby";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 const IndexPage = ({ data }) => {
   return (
@@ -29,6 +30,7 @@ const IndexPage = ({ data }) => {
       <Tools />
       <Projects data={data} />
       <Contact />
+      <Footer />
     </main>
   );
 };
